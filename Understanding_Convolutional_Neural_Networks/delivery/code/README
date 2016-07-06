@@ -1,0 +1,25 @@
+To execute our code some requirements must be installed:
+
+- Lasagne. Requires updated theano version, scipy and numpy
+	- pip instal rheano
+	- pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/v0.1/requirements.txt
+	- pip install numpy
+	- pip install scipy
+- cPickle package:
+	- pip install cPickle
+- tarfile and zipfile packages.
+
+Python 2.7 has been used.
+
+Execution instructions:
+
+The main architecture of the network contains two convolutional layers followed
+by max pool layers and local normalization layers across maps. Then,
+it is followed by a hidden layer and a softmax output layer. The main parameters
+to tune are included in conf.properties. Modify that file in order to
+change some of the parameters. If some deeper parameter modification is needed
+browse into the code.
+
+Then, execute:
+
+> python cifar.py
